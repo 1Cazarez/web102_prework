@@ -4,6 +4,15 @@ body {
     font-family: 'Cabin';
     background-color: #758190;
 }
+.stats-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
 
 #tentacles {
     width: 50px;
@@ -72,4 +81,71 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+.navbar ul {
+    display: flex;
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+.navbar ul li {
+    margin: 10px;
+}
+  
+.navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.navbar ul li a:hover {
+    color: rgb(38, 0, 255);
+}
+
+/* Default dark mode style */
+.dark-mode {
+    background-color: #024a89 ;
+}
+  
+.dark-mode h1,
+.dark-mode h2, 
+.dark-mode h3 {
+     color: rgb(0, 0, 0);
+}
+.dark-mode p{
+    color: rgb(0, 0, 0);
+}
+  
+#theme-button {
+    background-color: #8a8888;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#theme-button:hover {
+    background-color: #000000;
+}
+.dark-mode .header {
+    background-color: #013b6d;
+    box-shadow: 0 0 20px cyan;
+}
+
+
+
+.navbar {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    padding: 10px;
+    margin-bottom: 10px;
 }
